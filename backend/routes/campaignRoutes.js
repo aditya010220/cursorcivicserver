@@ -11,7 +11,7 @@ import {
   getCampaignEvidence,
   updateCampaignCover, // Add this import
   getAllCampaigns // Add this import
-} from '../controller/Campaign.js';
+} from '../controller/campaign.js';
 import { authMiddleware } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
