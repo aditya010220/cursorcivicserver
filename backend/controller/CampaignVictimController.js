@@ -1,5 +1,5 @@
-import CampaignVictim from '../models/CompaignVictim.js';
-import Campaign from '../models/Campaign.js';
+import CampaignVictim from '../models/campaignVictim.js';
+import Campaign from '../models/campaign.js';
 import mongoose from 'mongoose';
 import { uploadToBlob } from '../config/vercelBlob.js'; // Import the blob upload utility
 import multer from 'multer';
