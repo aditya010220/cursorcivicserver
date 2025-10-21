@@ -1,6 +1,6 @@
 import { Worker } from 'bullmq';
 import { validateEvidence } from '../services/geminiService';
-import CampaignEvidence from '../models/CampaignEvidence';
+import CampaignEvidence from '../models/campaignEvidence';
 
 const worker = new Worker('evidenceValidation', async (job) => {
   const { evidenceId } = job.data;

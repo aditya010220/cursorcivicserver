@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import Campaign from '../models/Campaign.js';
+import Campaign from '../models/campaign.js';
 import User from '../models/User.js';
 
 /**
