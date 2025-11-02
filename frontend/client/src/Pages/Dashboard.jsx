@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../Context/authContext';
 import { useCampaign } from '../Context/campaignContext';
 import SideNavbar from '../Component/Navbar/sideNavbar';
-import LoadingAnimation from '../Component/Loading/CustomLoading';
+import LoadingAnimation from '../Component/Loading/CustomLoading'; 
 import ProfileGlimpse from '../Component/Profile/ProfileGlimpse';
 import NewsFeed from '../Component/Dashboard/NewsFeed';
 import CampaignsAroundYou from '../Component/Dashboard/CompaignAroundYou';
