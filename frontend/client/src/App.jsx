@@ -3,7 +3,10 @@ import { AuthProvider } from './Context/authContext'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from './Pages/Login'
 import Dashboard from './Pages/Dashboard'
-import CampaignDetail from './component/Campaign/CampaignDetails'
+import CommunityHub from './Pages/CommunityHub'
+import NotificationsPage from './Pages/NotificationsPage'
+import SettingsPage from './Pages/SettingsPage'
+import CampaignDetail from './Component/Campaign/CampaignDetails'
 import CampaignForm from './Component/Campaign/CampaignForm'  // Add this import
 import CampaignListing from './Component/Campaign/CampaignList.jsx'
 import { Toaster } from 'react-hot-toast';
@@ -16,6 +19,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/community' element={<CommunityHub />} />
+          <Route path='/notifications' element={<NotificationsPage />} />
+          <Route path='/settings' element={<SettingsPage />} />
           {/* Add the create route BEFORE the parameterized route */}
           <Route path="/campaigns/create" element={<CampaignForm />} />
           <Route path="/campaigns/:campaignId" element={<CampaignDetail />} />
