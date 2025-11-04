@@ -58,12 +58,15 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
-    credentials: true,
-  })
-);
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://cursorcivicserver.vercel.app' // no trailing slash
+];
+
+app.use(cors({
+  origin: (origin, cb) => cb(null, origin || '*'),
+  credentials: true
+}));
 
 // Test route
 app.get('/', (req, res) => {
